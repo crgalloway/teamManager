@@ -1,0 +1,13 @@
+#wrapper{
+	padding: 2%;
+	background-color: #eeeeee;
+	height: 700px;
+	width: 700px;
+}
+#bigRoute{
+	padding: 2%;
+	background-color: white;
+	border: 2px solid black;
+	height: 85%;
+	width: 85%;
+}

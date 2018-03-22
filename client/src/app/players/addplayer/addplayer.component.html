@@ -1,0 +1,21 @@
+<h1>Add Player</h1>
+<form (submit)='onSubmit()'>
+	<table>
+		<tr>
+			<td>Player Name</td>
+			<td><input type="text" class="input" name="name" required minlength="2" #name="ngModel" [(ngModel)]='newPlayer.name'></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td *ngIf="name.errors">{{ name.errors|json }}</td>
+		</tr>
+		<tr>
+			<td>Preferred Position</td>
+			<td><input type="text" class="input" name="position"[(ngModel)]='newPlayer.position'></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td *ngIf="name.valid"><input type="submit" class="add" value="Add"></td>
+		</tr>
+	</table>
+</form>

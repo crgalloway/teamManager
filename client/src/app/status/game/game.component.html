@@ -1,0 +1,12 @@
+<table id="table">
+	<thead>
+		<th>Team Name</th>
+		<th>Actions</th>
+	</thead>
+	<tbody>
+		<tr *ngFor='let each of playerList'>
+			<td>{{ each.name }}</td>
+			<td><button [ngClass]="{'playing': each['status'][gameKey]['playing']}" (click)="changeStatus( each._id, 'playing')">Playing</button><button [ngClass]="{'notPlaying': each['status'][gameKey]['notPlaying']}" (click)="changeStatus( each._id, 'notPlaying')">Not Playing</button><button [ngClass]="{'undecided': each['status'][gameKey]['undecided']}" (click)="changeStatus( each._id, 'undecided')">Undecided</button></td>
+		</tr>
+	</tbody>
+</table>

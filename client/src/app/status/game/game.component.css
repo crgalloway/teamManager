@@ -1,0 +1,13 @@
+#table{
+	width: 100%;
+	text-align: left;
+}
+.playing{
+	background-color: green;
+}
+.notPlaying{
+	background-color: red;
+}
+.undecided{
+	background-color: yellow;
+}
